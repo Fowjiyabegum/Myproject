@@ -12,13 +12,17 @@ public static void main(String[] args) {
 	WebDriver driver=new ChromeDriver();
 	driver.get("https://www.facebook.com/");
 	driver.manage().window().maximize();
-	System.out.println("Add edit 2 done by Test2");
+
+	
 	WebElement txtUsername = driver.findElement(By.id("email"));
 	txtUsername.sendKeys("velmurugasiromrbranch@gmail.com");
 	WebElement txtPassword = driver.findElement(By.id("pass"));
 	txtPassword.sendKeys("Greens@123");
 	Actions actions=new Actions(driver);
 	actions.keyDown(Keys.ENTER).perform();
+	System.out.println("Add edit 2 done by Test2");
+
+	System.out.println("Here I am add data inbetween existing code");
 
 		}
 }
