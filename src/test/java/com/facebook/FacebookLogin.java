@@ -12,7 +12,7 @@ public static void main(String[] args) {
 	WebDriver driver=new ChromeDriver();
 	driver.get("https://www.facebook.com/");
 	driver.manage().window().maximize();
-	
+	System.out.println("Here I am add data inbetween existing code");
 	WebElement txtUsername = driver.findElement(By.id("email"));
 	txtUsername.sendKeys("velmurugasiromrbranch@gmail.com");
 	WebElement txtPassword = driver.findElement(By.id("pass"));
